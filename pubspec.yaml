@@ -1,0 +1,136 @@
+name: hackathon_project
+description: A new Flutter project.
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.5 <3.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  battery_plus: ^3.0.3
+  permission_handler: ^10.2.0
+  flutter_sms: ^2.3.3
+  location: ^4.4.0
+  pinput: ^2.2.31
+  flutter_map: ^0.13.1
+  latlong2: ^0.8.1
+  hive_flutter: ^1.1.0
+  flutter_bloc: ^8.1.2
+  dio: ^5.1.1
+  flutter_polyline_points: ^1.0.0
+  flutter_chat_bubble: ^2.0.2
+  url_launcher: ^6.1.10
+  contacts_service: ^0.6.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: "^0.12.0"
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^2.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/icons/logo.png
+  # introduction screen
+    - assets/images/add_your_close_circle.png
+    - assets/images/sos_feature.png
+    - assets/images/track_safe_zones.png
+  # page not found page
+    - assets/images/page_not_found.jpg
+  # home page
+    - assets/images/be_aware.jpg
+    - assets/images/directions.jpg
+    - assets/images/friends.jpg
+    - assets/images/helpline_numbers.jpg
+    - assets/images/e_learning.jpg
+    - assets/images/report_as_victim.jpg
+    - assets/images/report_as_witness.jpg
+    - assets/images/report_history.jpg
+    - assets/images/sakhi.jpg
+    - assets/images/sos_history.jpg
+  # aadhar_card page
+    - assets/images/aadhar_card.png
+  # pages inside home pages
+    - assets/images/add_hostels.jpg
+    - assets/images/favourites.jpg
+    - assets/images/learn_on_the_go.jpg
+    - assets/images/my_incidents.jpg
+    - assets/images/my_requests.jpg
+    - assets/images/no_requests.png
+    - assets/images/policies_and_docs.jpg
+    - assets/images/request_help.jpg
+    - assets/images/search_hostels.jpg
+
+
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: Gilroy
+      fonts:
+        - asset: assets/fonts/Gilroy/Gilroy-Bold.ttf
+        - asset: assets/fonts/Gilroy/Gilroy-ExtraBold.ttf
+        - asset: assets/fonts/Gilroy/Gilroy-SemiBold.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
